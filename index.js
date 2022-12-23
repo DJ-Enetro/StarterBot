@@ -34,6 +34,7 @@ function configureBot(bot) {
             const foundEntity = await bot.findBlock(entityName, {skipClosest: skipCurrentEntity});
             if (foundEntity) {
                 // If the Bot located one, then go chop it
+                console.log(foundEntity)
                 const success = await bot.findAndDigBlock(entityName, {skipClosest: skipCurrentEntity});
                 if (!success) {
                     // If anything prevents the Bot from breaking the block,

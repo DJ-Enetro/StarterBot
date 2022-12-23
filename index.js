@@ -128,7 +128,7 @@ function configureBot(bot) {
     // When the Bot spawns, begin the main gathering loop.
     // Before collecting, have the Bot craft pickaxes if it has none.
     bot.on('spawn', async () => {
-        bot.chat('Hello, I have arrived!');
+        bot.chat('Ready to score...');
 
         let oreCollected = bot.getInventoryItemQuantity('coal_ore');
         let applesCollected = bot.getInventoryItemQuantity('apple');

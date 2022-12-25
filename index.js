@@ -146,7 +146,6 @@ function configureBot(bot) {
         // Once the Bot has 100 points, announce it in the chat
         bot.chat(`I reached my goal! I have ${oreCollected} coal_ore and ${applesCollected} apples`);
     });
-
 }
 
 exports.configureBot = configureBot;
